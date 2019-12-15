@@ -5,35 +5,11 @@ jobs:
         steps:
             - checkout
             - run:
-                name: Install python
+                name: spin up docker
                 command: |
-                  sudo apt install -y python
+                   docker run -d --name db nodejs
 
             - run:
-                name: check version
+                name: verify docker
                 command: |
-                  python --version
-
-            - run:
-                name: check ip
-                command: |
-                  ip a
-
-  build-python3:
-        machine: true
-        steps:
-            - checkout
-            - run:
-                name: Install python
-                command: |
-                  sudo apt install -y python3
-
-            - run:
-                name: check version
-                command: |
-                  python --version
-
-            - run:
-                name: check ip
-                command: |
-                  ip a
+                   docker ps -a
