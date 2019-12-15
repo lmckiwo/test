@@ -1,14 +1,21 @@
 version: 2
 jobs:
   build:
-        machine: true
+        docker:
+          - image: circleci/python2.7
+
         steps:
             - checkout
+            - setup_remote_docker
             - run:
                 name: spin up docker
                 command: |
+                   pwd
+                   ls
                    docker build -t mockssh .
                    docker run -d --name mockssh mockssh
+                   pwd
+                   ls
 
             - run:
                 name: verify docker
