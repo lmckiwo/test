@@ -11,8 +11,6 @@ jobs:
                 chmod +x ~/docker-compose
                 sudo mv ~/docker-compose /usr/local/bin/docker-compose
 
-          - setup_remote_docker
-          
           - run:
               name: Install python
               command: |
