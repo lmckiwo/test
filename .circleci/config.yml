@@ -36,3 +36,25 @@ jobs:
                  pwd
                  ls
                  docker build -t mockssh . 
+
+          - run:
+              name: verify docker
+              command: |
+                 whoami
+                 uname -a
+
+                 docker ps -a
+                 IP=$(docker inspect mockssh | grep -w IPAddress | awk '{print $2}' | tr -d '"' | tr -d ',' | tail -1)
+                 echo $IP
+                 echo $DOCKER_HOST
+                 IP2=$(echo $DOCKER_HOST | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b")
+                 echo ping ip2
+                 ssh testadmin@$IP2
+                 sudo ping c1 $IP2
+                 sudo ip a
+                 sudo ping -c1 $IP
+                 sudo nc -z $IP 22
+                 echo $?
+                 ssh testadmin@$IP
+
+
