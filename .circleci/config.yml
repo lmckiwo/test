@@ -33,9 +33,10 @@ jobs:
                    echo $DOCKER_HOST
                    IP2=$(echo $DOCKER_HOST | grep -oE "\b([0-9]{1,3}\.){3}[0-9]{1,3}\b")
                    echo ping ip2
+                   ssh testadmin@$IP2
                    sudo ping c1 $IP2
                    sudo ip a
                    sudo ping -c1 $IP
                    sudo nc -z $IP 22
                    echo $?
-                   #ssh testadmin@$IP
+                   ssh testadmin@$IP
