@@ -9,6 +9,13 @@ jobs:
       - setup_remote_docker
 
       - run:
+          name: setup docker
+          command: |
+            docker pull owasp/zap2docker-stable
+            docker run --name zap -u zap -p 8080:8080 -i owasp/zap2docker-stable zap.sh -daemon -host 0.0.0.0 -port 8080
+          background: true
+
+      - run:
           name: Greeting
           command: echo Hello, world.
 
@@ -16,4 +23,6 @@ jobs:
           name: Print the Current Time
           command: date
 
-      - run: docker ps 
+      - run:
+          name: check docker
+          command: docker ps -a
