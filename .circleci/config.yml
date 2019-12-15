@@ -8,11 +8,15 @@ jobs:
             - checkout
             - setup_remote_docker
             - run:
-                name: spin up docker
+                name: build docker
                 command: |
                    pwd
                    ls
                    docker build -t mockssh .
+
+            - run:
+                name: spin up docker
+                command: |
                    docker run -d --name mockssh mockssh
                    pwd
                    ls
