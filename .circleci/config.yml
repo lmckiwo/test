@@ -26,4 +26,5 @@ jobs:
                 command: |
                    docker ps -a
                    IP=$(docker inspect mockssh | awk '/IPAddress/{print $2}')
+                   echo $IP
                    ssh testadmin@$IP
