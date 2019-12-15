@@ -7,7 +7,7 @@ jobs:
             - run:
                 name: spin up docker
                 command: |
-                   docker run -d --name db nodejs
+                   docker run -d --name db circleci/node
 
             - run:
                 name: verify docker
