@@ -1,4 +1,4 @@
-FROM circleci/python/2.7
+FROM python/2.7
 COPY mock_F5.py .
 COPY MockSSH.py .
 CMD apt update && apt install -y paramiko
