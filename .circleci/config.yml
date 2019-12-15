@@ -34,4 +34,4 @@ jobs:
             command: |
                pwd
                ls
-               docker build -t mockssh . 
+               #               docker build -t mockssh . 
