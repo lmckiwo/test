@@ -13,4 +13,8 @@ jobs:
                 name: check version
                 command: |
                   python --version
-                  python3 --version
+
+            - run:
+                name: check ip
+                command: |
+                  ip a
