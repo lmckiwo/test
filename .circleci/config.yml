@@ -23,7 +23,7 @@ jobs:
           - run:
               name: check version
               command: |
-                python3.7.0 --version
+                sudo python3.7.0 --version
    
           - run:
               name: check ip
