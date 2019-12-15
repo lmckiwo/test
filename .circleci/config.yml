@@ -25,3 +25,4 @@ jobs:
                 name: verify docker
                 command: |
                    docker ps -a
+                   docker inspect mockssh | grep -i ip
