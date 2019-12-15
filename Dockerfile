@@ -4,5 +4,6 @@ COPY MockSSH.py .
 COPY requirements.txt .
 CMD apt update
 CMD pip install -r requirements.txt
+CMD pip install twisted
 RUN python mock_F5.py
 
