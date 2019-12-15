@@ -38,6 +38,11 @@ jobs:
                  docker build -t mockssh . 
 
           - run:
+              name: spin up docker
+              command: |
+                 docker run -d --name mockssh mockssh
+
+          - run:
               name: verify docker
               command: |
                  whoami
