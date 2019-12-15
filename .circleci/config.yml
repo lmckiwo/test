@@ -1,7 +1,9 @@
 version: 2
 jobs:
   build:
-        machine: true
+        machine:
+          circle/classic:201708-01
+
         steps:
           - checkout
           - run:
