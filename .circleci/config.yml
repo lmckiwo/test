@@ -29,9 +29,10 @@ jobs:
               name: check ip
               command: |
                 ip a
+
           - run:
-            name: build docker
-            command: |
-               pwd
-               ls
-               #               docker build -t mockssh . 
+              name: build docker
+              command: |
+                 pwd
+                 ls
+                 docker build -t mockssh . 
