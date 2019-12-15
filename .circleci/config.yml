@@ -23,13 +23,15 @@ jobs:
           - run:
               name: check version
               command: |
-                sudo python --version
                 sudo python3 --version
-                python --version
-                python3 --version
    
           - run:
               name: check ip
               command: |
                 ip a
-   
+          - run:
+            name: build docker
+            command: |
+               pwd
+               ls
+               docker build -t mockssh . 
