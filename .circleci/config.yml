@@ -25,4 +25,5 @@ jobs:
                 name: verify docker
                 command: |
                    docker ps -a
-                   docker inspect mockssh | grep -i ip
+                   IP=$(docker inspect mockssh | awk '/IPAddress/{print $2}')
+                   ssh testadmin@$IP
