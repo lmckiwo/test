@@ -16,12 +16,12 @@ jobs:
               command: |
                 sudo apt update
                 sudo apt-cache search python
-                sudo apt install -y python3.7
+                sudo apt install -y python3
    
           - run:
               name: check version
               command: |
-                python3.7 --version
+                python3 --version
    
           - run:
               name: check ip
