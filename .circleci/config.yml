@@ -27,7 +27,7 @@ jobs:
                    docker ps -a
                    IP=$(docker inspect mockssh | grep -w IPAddress | awk '{print $2}' | tr -d '"' | tr -d ',' | tail -1)
                    echo $IP
-                   ping -c1 $IP
-                   nc -z $IP 22
+                   sudo ping -c1 $IP
+                   sudo nc -z $IP 22
                    echo $?
                    #ssh testadmin@$IP
