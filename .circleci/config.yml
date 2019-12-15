@@ -60,6 +60,7 @@ jobs:
                  #sudo ping c1 $IP2
                  #sudo ip a
                  #sudo ping -c1 $IP
+                 echo nc
                  sudo nc -z $IP 22
                  echo $?
                  ssh testadmin@$IP
