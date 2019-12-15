@@ -11,7 +11,8 @@ jobs:
       - run:
           name: setup docker
           command: |
-            docker run --name zap -p 8080:8080 -i nodejs -daemon -host 0.0.0.0 -port 8080
+            docker pull owasp/zap2docker-stable
+            docker run --name zap -u zap -p 8080:8080 -i owasp/zap2docker-stable zap.sh -daemon -host 0.0.0.0 -port 8080
           background: true
 
       - run:
