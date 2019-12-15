@@ -5,11 +5,6 @@ jobs:
         steps:
             - checkout
             - run:
-                name: Upgrade node.js
+                name: Install python
                 command: |
-                    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-                    sudo apt-get install -y nodejs
-                    node -v
-            - run: npm run build:prod
-            - run: docker-compose up -d
-            - run: npm run test-e2e
+                  apt install -y python3 python
