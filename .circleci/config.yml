@@ -8,3 +8,9 @@ jobs:
                 name: Install python
                 command: |
                   sudo apt install -y python3 python
+
+            - run:
+                name: check version
+                command: |
+                  python --version
+                  python3 --version
