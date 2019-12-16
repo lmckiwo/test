@@ -63,6 +63,7 @@ jobs:
                  #echo nc
                  #sudo nc -z $IP 22
                  #echo $?
+                 docker exec mockssh ip a
                  ssh testadmin@$IP
 
 
