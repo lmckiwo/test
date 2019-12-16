@@ -30,18 +30,24 @@ jobs:
               command: |
                 ip a
 
-          - run:
-              name: build docker
-              command: |
-                 pwd
-                 ls
-                 docker build -t mockssh . 
+#          - run:
+#              name: build docker
+#              command: |
+#                 pwd
+#                 ls
+#                 docker build -t mockssh . 
 
+#          - run:
+#              name: spin up docker
+#              command: |
+#                 docker run -d --name mockssh mockssh
+#
           - run:
-              name: spin up docker
+              name: start container
               command: |
-                 docker run -d --name mockssh mockssh
-
+                set -x
+                docker-compose up -d
+                
           - run:
               name: verify docker
               command: |
