@@ -4,4 +4,4 @@ services:
      build: .
      container_name: mockssh
      ports:
-       - "22:22"
+       - "2222:2222"

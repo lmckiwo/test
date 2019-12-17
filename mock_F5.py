@@ -98,7 +98,7 @@ def main():
         prompt="[root@hostname:Active] testadmin # ",
         keypath=keypath,
         interface="localhost",
-        port=22,
+        port=2222,
         **users)
 
 if __name__ == "__main__":
