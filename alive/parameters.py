@@ -8,6 +8,7 @@ hostParams = [
 nodeParams = [
     "vendor",
     "active",
+    "port",
     "u_connected",
     "c_connected",
     "u_alive",
