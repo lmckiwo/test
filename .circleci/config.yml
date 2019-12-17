@@ -81,7 +81,8 @@ jobs:
               name: enter IP
               command: |
                  cd test
-                 for i in *.json.orig; do
+                 ls *.json.test.orig
+                 for i in *.json.test.orig; do
                    sed -i s"/127.0.0.1/$IP/g" $i
                  done
 
