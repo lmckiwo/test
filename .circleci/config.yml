@@ -82,6 +82,10 @@ jobs:
               command: |
                  cd test
                  ls *.json.test.orig
+                 echo
+                 echo
+                 echo 'hosts file'
+                 cat ../test/hosts2.json.test.orig
                  for i in *.json.test.orig; do
                    sed -i s"/127.0.0.1/$IP/g" $i
                  done
@@ -101,6 +105,8 @@ jobs:
                 echo
                 echo
                 cat ../test/status.json.test
+                echo
+                echo
                 echo 'hosts file'
                 cat ../test/hosts2.json.test.orig
                 sudo python3 test.py
