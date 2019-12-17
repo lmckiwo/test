@@ -73,6 +73,7 @@ jobs:
                  docker exec mockssh apt update
                  docker exec mockssh apt install -y net-tools
                  docker exec mockssh netstat -an | grep -w 2222
-                 ssh -p 2222 testadmin@$IP
+                 nc -z $IP 2222
+                 #ssh -p 2222 testadmin@$IP
 
 
