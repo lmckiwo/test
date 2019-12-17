@@ -98,6 +98,7 @@ class ATICHosts(Hosts, Vendors):
                     ipAddress = self.getHostIP(car, apn)
                     port = self.getHostNodePort(car, node)
                     if ipAddress != "NA":
+                        print ("IP ADDRESS", ipAddress, port)
                         if not self.nc(ipAddress, port):
                             return self.NOTCONNECTED
                     else:
