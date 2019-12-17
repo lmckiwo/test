@@ -17,8 +17,8 @@ jobs:
               name: Install python
               command: |
                 sudo apt update
-                sudo apt-cache search python
-                sudo apt install -y python3
+                sudo apt install -y python3 python3-pip
+                sudo pip3 install -r requirements.txt
    
           - run:
               name: check version
@@ -86,16 +86,16 @@ jobs:
                    sed -i s"/127.0.0.1/$IP/g" $i
                  done
 
-          - run:
-              name: install requirements
-              command: |
-                sudo apt install -y python3-pip
-                sudo pip3 install -r requirements.txt
+#          - run:
+#              name: install requirements
+#              command: |
+#                sudo apt install -y python3-pip
+#                sudo pip3 install -r requirements.txt
 
           - run:
               name: run test
               command: |
                 cd alive
-                python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
+                sudo python3 createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
                 cp ../test/status.json.test ../test/status.json.test.orig
                 sudo python3 test.py
