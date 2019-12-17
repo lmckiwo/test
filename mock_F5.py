@@ -97,7 +97,7 @@ def main():
         commands,
         prompt="[root@hostname:Active] testadmin # ",
         keypath=keypath,
-        interface="localhost",
+        interface="0.0.0.0",
         port=2222,
         **users)
 
