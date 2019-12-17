@@ -98,4 +98,8 @@ jobs:
                 cd alive
                 sudo python3 createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
                 cp ../test/status.json.test ../test/status.json.test.orig
+                echo
+                echo
+                cat ../test/status.json.test
                 sudo python3 test.py
+
