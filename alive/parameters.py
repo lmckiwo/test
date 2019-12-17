@@ -18,6 +18,7 @@ nodeParams = [
 nodeVendorParams = [
     "vendor",
     "active",
+    "port",
     "u_connected",
     "c_connected",
     "alive"
