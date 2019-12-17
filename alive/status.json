@@ -1,0 +1,816 @@
+{
+    "ATIC-005": {
+        "config": {
+            "active": "true",
+            "host-us": "10.184.2.119",
+            "host-can": "165.115.109.99",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "ATIC-006": {
+        "config": {
+            "active": "true",
+            "host-us": "10.184.2.127",
+            "host-can": "165.115.108.165",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "ATIC-007": {
+        "config": {
+            "active": "true",
+            "host-us": "NA",
+            "host-can": "165.115.108.152",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "RQMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "ATIC-008": {
+        "config": {
+            "active": "true",
+            "host-us": "NA",
+            "host-can": "165.115.109.153",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "RQMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "ATIC-009": {
+        "config": {
+            "active": "true",
+            "host-us": "NA",
+            "host-can": "165.115.109.119",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "RQMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "ATIC-010": {
+        "config": {
+            "active": "false",
+            "host-us": "NA",
+            "host-can": "165.115.109.224",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "RQMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "ATIC-011": {
+        "config": {
+            "active": "false",
+            "host-us": "NA",
+            "host-can": "165.115.109.173",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "RQMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "ATIC-012": {
+        "config": {
+            "active": "false",
+            "host-us": "NA",
+            "host-can": "165.115.109.159",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "TGMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Gage/RPMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "RQMS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "LOCD/GIS": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Exception": {
+                "vendor": "ensco",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "Applanix": {
+                "vendor": "ensco",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "QA-001": {
+        "config": {
+            "active": "true",
+            "host-us": "NA",
+            "host-can": "165.115.109.186",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            }
+        }
+    },
+    "LOBSLab": {
+        "config": {
+            "active": "true",
+            "host-us": "10.184.2.122",
+            "host-can": "165.115.109.113",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "WCM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SMM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "SA": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-1-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            },
+            "HPEAP-2-VM": {
+                "vendor": "cn",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "u_alive": "",
+                "c_alive": ""
+            }
+        }
+    }
+}

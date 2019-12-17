@@ -1,0 +1,26 @@
+DIR="/cygdrive/z/CB956001_PTC Program/09 Systems - Projects/ATIP Autonomous Track Inspection Program/Tools/alive-version3.3"
+while true; do
+    if [ -f "${DIR}"/stop ]; then
+        sleep 600
+        continue
+    fi
+
+    python test3.py
+    echo "breaking out" >> "${DIR}"/alive.log
+    if [ $(ls "${DIR}"/patch/ | wc -l) -ne 0 ]; then
+        echo Patch found >> "${DIR}"/alive.log
+        for file in "${DIR}"/patch/*; do
+            if [ -f $(basename "${file}") ]; then
+                echo Creating backup of files to be upgraded >> "${DIR}"/alive.log
+                cp $(basename "${file}")  $(basename "${file}").$(date +%Y%m%dT%H%M%S)
+            fi
+            echo Upgrading $(basename "${file}") >> "${DIR}"/alive.log
+            mv "${file}" .
+        done
+    else
+        echo no files found in patch >> "${DIR}"/alive.log
+        echo  $(ls "${DIR}"/patch/) >> "${DIR}"/alive.log
+    fi
+    echo going to sleep >> "${DIR}"/alive.log
+    sleep 120
+done

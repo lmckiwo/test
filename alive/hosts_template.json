@@ -1,0 +1,43 @@
+{
+    "default": {
+        "config"  : {
+            "active": "true"
+        },
+        "nodes"      :  {
+            "node1" : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "vendor1",
+                "username" :  "user",
+                "port"     : "22",
+                "password" : "password"
+            },
+            "node2" : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "vendor1",
+                "username" :  "user",
+                "port"     : "30254",
+                "password" : "password"
+            }
+        }
+    },
+    "host1": {
+        "config"   : {
+            "ensco-unit" : "1234",
+            "ensco-name" : "NAME1",
+            "CN-id"      : "ID2",
+            "host-can"   : "127.0.0.1",
+            "host-us"    : "127.0.0.2",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "node1" : {
+                "active"   : "true"
+            },
+            "node2" : {
+                "active"   : "true"
+            }
+        }
+    }
+}

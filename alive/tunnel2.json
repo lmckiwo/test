@@ -1,0 +1,1 @@
+{"default": {"config": {"port": "30002", "username": "root", "password": "qwerty12345", "remoteIP": "10.1.0.2", "remotePort": "1883", "localIP": "0.0.0.0", "localPort": "2883"}}, "ATIC-005": {"config": {"ip": "10.184.2.119", "port": "12345", "localPort": "2883", "username": "root", "password": "qwerty12345", "remoteIP": "10.1.0.2", "remotePort": "1883", "localIP": "0.0.0.0"}}}

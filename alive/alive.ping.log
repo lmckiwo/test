@@ -1,0 +1,268 @@
+2019-11-04 15:42:10,016 DEBUG ATIC.status.readJson.connectAll() Checking of car ATIC-005 is alive.
+2019-11-04 15:42:10,016 DEBUG ATIC.status.readJson.ping() Trying to ping 10.184.2.119
+2019-11-04 15:42:10,401 DEBUG ATIC.status.readJson.ping() ping -n 1 -w 1 10.184.2.119 failed. (ret=256)
+2019-11-04 15:42:10,401 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 WCM alive offline
+2019-11-04 15:42:10,401 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,402 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][WCM] is good
+2019-11-04 15:42:10,402 INFO  ATIC.statusHandler.1.writeStatus() Updating ATIC-005-WCM from online => offline
+2019-11-04 15:42:10,406 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,406 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-005[TGMS] is 192.206.233.190
+2019-11-04 15:42:10,406 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,406 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.190 in car ATIC-005
+2019-11-04 15:42:10,407 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 SMM connected notConnected
+2019-11-04 15:42:10,407 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,407 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][SMM] is good
+2019-11-04 15:42:10,407 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 TGMS alive online
+2019-11-04 15:42:10,407 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,407 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][TGMS] is good
+2019-11-04 15:42:10,407 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,407 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-005[Gage/RPMS] is 192.206.233.80
+2019-11-04 15:42:10,407 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,407 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.80 in car ATIC-005
+2019-11-04 15:42:10,407 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 SMM connected notConnected
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][SMM] is good
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 Gage/RPMS alive online
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][Gage/RPMS] is good
+2019-11-04 15:42:10,408 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,408 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-005[LOCD/GIS] is 192.206.233.210
+2019-11-04 15:42:10,408 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,408 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.210 in car ATIC-005
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 SMM connected notConnected
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][SMM] is good
+2019-11-04 15:42:10,408 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 LOCD/GIS alive online
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][LOCD/GIS] is good
+2019-11-04 15:42:10,409 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,409 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-005[Exception] is 192.206.233.211
+2019-11-04 15:42:10,409 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,409 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.211 in car ATIC-005
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 SMM connected notConnected
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][SMM] is good
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 Exception alive online
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,409 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][Exception] is good
+2019-11-04 15:42:10,410 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,410 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-005[Applanix] is 192.206.233.91
+2019-11-04 15:42:10,410 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,410 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.91 in car ATIC-005
+2019-11-04 15:42:10,410 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 SMM connected notConnected
+2019-11-04 15:42:10,410 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,410 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][SMM] is good
+2019-11-04 15:42:10,410 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-005 Applanix alive online
+2019-11-04 15:42:10,410 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,410 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-005][Applanix] is good
+2019-11-04 15:42:10,410 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,410 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-006[TGMS] is 192.206.233.190
+2019-11-04 15:42:10,410 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,411 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.190 in car ATIC-006
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 SMM connected notConnected
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][SMM] is good
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 TGMS alive online
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][TGMS] is good
+2019-11-04 15:42:10,411 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,411 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-006[Gage/RPMS] is 192.206.233.80
+2019-11-04 15:42:10,411 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,411 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.80 in car ATIC-006
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 SMM connected notConnected
+2019-11-04 15:42:10,411 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][SMM] is good
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 Gage/RPMS alive online
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][Gage/RPMS] is good
+2019-11-04 15:42:10,412 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,412 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-006[LOCD/GIS] is 192.206.233.210
+2019-11-04 15:42:10,412 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,412 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.210 in car ATIC-006
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 SMM connected notConnected
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][SMM] is good
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 LOCD/GIS alive online
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,412 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][LOCD/GIS] is good
+2019-11-04 15:42:10,413 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,413 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-006[Exception] is 192.206.233.211
+2019-11-04 15:42:10,413 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,413 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.211 in car ATIC-006
+2019-11-04 15:42:10,413 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 SMM connected notConnected
+2019-11-04 15:42:10,413 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,413 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][SMM] is good
+2019-11-04 15:42:10,413 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 Exception alive online
+2019-11-04 15:42:10,413 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,413 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][Exception] is good
+2019-11-04 15:42:10,413 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,413 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-006[Applanix] is 192.206.233.91
+2019-11-04 15:42:10,413 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,414 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.91 in car ATIC-006
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 SMM connected notConnected
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][SMM] is good
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-006 Applanix alive online
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-006][Applanix] is good
+2019-11-04 15:42:10,414 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,414 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-007[TGMS] is 192.206.233.190
+2019-11-04 15:42:10,414 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,414 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.190 in car ATIC-007
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 SMM connected notConnected
+2019-11-04 15:42:10,414 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][SMM] is good
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 TGMS alive online
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][TGMS] is good
+2019-11-04 15:42:10,415 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,415 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-007[Gage/RPMS] is 192.206.233.80
+2019-11-04 15:42:10,415 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,415 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.80 in car ATIC-007
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 SMM connected notConnected
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][SMM] is good
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 Gage/RPMS alive online
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,415 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][Gage/RPMS] is good
+2019-11-04 15:42:10,416 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[RQMS] exists
+2019-11-04 15:42:10,416 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-007[RQMS] is 192.206.233.180
+2019-11-04 15:42:10,416 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[RQMS] exists
+2019-11-04 15:42:10,416 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.180 in car ATIC-007
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 SMM connected notConnected
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][SMM] is good
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 RQMS alive online
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][RQMS] is good
+2019-11-04 15:42:10,416 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,416 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-007[LOCD/GIS] is 192.206.233.210
+2019-11-04 15:42:10,416 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,416 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.210 in car ATIC-007
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 SMM connected notConnected
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][SMM] is good
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 LOCD/GIS alive online
+2019-11-04 15:42:10,416 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][LOCD/GIS] is good
+2019-11-04 15:42:10,417 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,417 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-007[Exception] is 192.206.233.211
+2019-11-04 15:42:10,417 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,417 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.211 in car ATIC-007
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 SMM connected notConnected
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][SMM] is good
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 Exception alive online
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][Exception] is good
+2019-11-04 15:42:10,417 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,417 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-007[Applanix] is 192.206.233.91
+2019-11-04 15:42:10,417 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,417 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.91 in car ATIC-007
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 SMM connected notConnected
+2019-11-04 15:42:10,417 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][SMM] is good
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-007 Applanix alive online
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-007][Applanix] is good
+2019-11-04 15:42:10,418 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,418 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-008[TGMS] is 192.206.233.190
+2019-11-04 15:42:10,418 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,418 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.190 in car ATIC-008
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 SMM connected notConnected
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][SMM] is good
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 TGMS alive online
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][TGMS] is good
+2019-11-04 15:42:10,418 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,418 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-008[Gage/RPMS] is 192.206.233.80
+2019-11-04 15:42:10,418 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,418 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.80 in car ATIC-008
+2019-11-04 15:42:10,418 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 SMM connected notConnected
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][SMM] is good
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 Gage/RPMS alive online
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][Gage/RPMS] is good
+2019-11-04 15:42:10,419 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,419 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-008[LOCD/GIS] is 192.206.233.210
+2019-11-04 15:42:10,419 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,419 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.210 in car ATIC-008
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 SMM connected notConnected
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][SMM] is good
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 LOCD/GIS alive online
+2019-11-04 15:42:10,419 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,420 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][LOCD/GIS] is good
+2019-11-04 15:42:10,420 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,420 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-008[Exception] is 192.206.233.211
+2019-11-04 15:42:10,420 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,420 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.211 in car ATIC-008
+2019-11-04 15:42:10,420 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 SMM connected notConnected
+2019-11-04 15:42:10,420 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,420 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][SMM] is good
+2019-11-04 15:42:10,420 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 Exception alive online
+2019-11-04 15:42:10,420 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,420 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][Exception] is good
+2019-11-04 15:42:10,420 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,420 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-008[Applanix] is 192.206.233.91
+2019-11-04 15:42:10,420 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,420 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.91 in car ATIC-008
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 SMM connected notConnected
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][SMM] is good
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-008 Applanix alive online
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-008][Applanix] is good
+2019-11-04 15:42:10,421 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,421 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-009[TGMS] is 192.206.233.190
+2019-11-04 15:42:10,421 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[TGMS] exists
+2019-11-04 15:42:10,421 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.190 in car ATIC-009
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 SMM connected notConnected
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][SMM] is good
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 TGMS alive online
+2019-11-04 15:42:10,421 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,422 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][TGMS] is good
+2019-11-04 15:42:10,422 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,422 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-009[Gage/RPMS] is 192.206.233.80
+2019-11-04 15:42:10,422 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Gage/RPMS] exists
+2019-11-04 15:42:10,422 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.80 in car ATIC-009
+2019-11-04 15:42:10,422 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 SMM connected notConnected
+2019-11-04 15:42:10,422 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,422 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][SMM] is good
+2019-11-04 15:42:10,422 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 Gage/RPMS alive online
+2019-11-04 15:42:10,422 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,422 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][Gage/RPMS] is good
+2019-11-04 15:42:10,422 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,422 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-009[LOCD/GIS] is 192.206.233.210
+2019-11-04 15:42:10,422 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[LOCD/GIS] exists
+2019-11-04 15:42:10,422 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.210 in car ATIC-009
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 SMM connected notConnected
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][SMM] is good
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 LOCD/GIS alive online
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][LOCD/GIS] is good
+2019-11-04 15:42:10,423 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,423 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-009[Exception] is 192.206.233.211
+2019-11-04 15:42:10,423 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Exception] exists
+2019-11-04 15:42:10,423 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.211 in car ATIC-009
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 SMM connected notConnected
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][SMM] is good
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 Exception alive online
+2019-11-04 15:42:10,423 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,424 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][Exception] is good
+2019-11-04 15:42:10,424 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,424 DEBUG ATIC.ATICHosts.isVendorNodeAlive() ip address for ATIC-009[Applanix] is 192.206.233.91
+2019-11-04 15:42:10,424 DEBUG ATIC.status.readJson.isVendorNodeExists() ENSCO[Applanix] exists
+2019-11-04 15:42:10,424 DEBUG ATIC.status.readJson.ping() Trying to ping 192.206.233.91 in car ATIC-009
+2019-11-04 15:42:10,424 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 SMM connected notConnected
+2019-11-04 15:42:10,424 DEBUG ATIC.statusHandler.1.writeStatus() param is connected for 
+2019-11-04 15:42:10,424 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][SMM] is good
+2019-11-04 15:42:10,424 DEBUG ATIC.statusHandler.1.writeStatus() params passed: ATIC-009 Applanix alive online
+2019-11-04 15:42:10,424 DEBUG ATIC.statusHandler.1.writeStatus() param is alive for 
+2019-11-04 15:42:10,424 DEBUG ATIC.statusHandler.1.writeStatus() self.stat.status[ATIC-009][Applanix] is good
+2019-11-04 15:42:10,424 INFO  ATIC.<module>() Sleeping for 120 seconds

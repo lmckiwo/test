@@ -1,0 +1,491 @@
+{
+    "default": {
+        "config"  : {
+            "active": "true"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "cn",
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "poiuy09876"
+            },
+            "SMM" : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "cn",
+                "username" :  "root",
+                "port"     : "30254",
+                "password" : "qwerty12345"
+            },
+            "SA"   : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "cn",
+                "username" :  "root",
+                "port"     : "30011",
+                "password" : "qwerty12345"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "cn",
+                "username" :  "root",
+                "port"     : "30002",
+                "password" : "qwerty12345"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "cn",
+                "username" :  "root",
+                "port"     : "30007",
+                "password" : "qwerty12345"
+            },
+            "TGMS"   : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "port"     : "20422",
+                "vendor"   : "ensco"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "port"     : "20489",
+                "vendor"   : "ensco"
+            },
+            "RQMS"   : {
+                "active"   : "false",
+                "ssh"      : "true",
+                "port"     : "21422",
+                "vendor"   : "ensco"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "port"     : "21489",
+                "vendor"   : "ensco"
+            },
+            "Exception"   : {
+                "active"   : "true",
+                "ssh"      : "false",
+                "vendor"   : "ensco"
+            },
+            "Applanix"   : {
+                "active"   : "false",
+                "ssh"      : "false",
+                "vendor"   : "ensco"
+            }
+        }
+    },
+    "ATIC-005": {
+        "config"   : {
+            "ensco-unit" : "90",
+            "ensco-name" : "ATGMS1",
+            "CN-id"      : "CNIS412040",
+            "host-can"   : "165.115.109.99",
+            "host-us"    : "10.184.2.119",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true"
+            },
+            "TGMS"   : {
+                "active"   : "true"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "ATIC-006": {
+        "config" : {
+            "ensco-unit" : "91",
+            "ensco-name" : "ATGMS2",
+            "CN-id"      : "CNIS412027",
+            "host-can"   : "165.115.108.165",
+            "host-us"    : "10.184.2.127",
+            "wifi"       : "NA"
+        },
+         "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true"
+            },
+            "TGMS"   : {
+                "active"   : "true"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "ATIC-007": {
+        "config" : {
+            "ensco-unit" : "92",
+            "ensco-name" : "ATGMS3",
+            "CN-id"      : "CNIS412052",
+            "host-can"   : "165.115.108.152",
+            "host-us"    : "NA",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true"
+            },
+            "TGMS"   : {
+                "active"   : "true"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "RQMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "ATIC-008": {
+        "config" : {
+            "ensco-unit" : "93",
+            "ensco-name" : "ATGMS4",
+            "CN-id"      : "CNIS412024",
+            "host-can"   : "165.115.109.153",
+            "host-us"    : "NA",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true"
+            },
+            "TGMS"   : {
+                "active"   : "true"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "RQMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "ATIC-009": {
+        "config" : {
+            "ensco-unit" : "94",
+            "ensco-name" : "ATGMS5",
+            "CN-id"      : "CNIS412031",
+            "host-can"   : "165.115.109.119",
+            "host-us"    : "NA",
+            "wifi"       : "NA"
+        },
+         "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true"
+            },
+            "TGMS"   : {
+                "active"   : "true"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "RQMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "ATIC-010": {
+        "config" : {
+            "active"     : "false",
+            "ensco-unit" : "95",
+            "ensco-name" : "ATGMS6",
+            "CN-id"      : "CNIS412060",
+            "host-can"   : "165.115.109.224",
+            "host-us"    : "NA",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "false"
+            },
+            "SMM" : {
+                "active"   : "false"
+            },
+            "SA"   : {
+                "active"   : "false"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "false"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "false"
+            },
+            "TGMS"   : {
+                "active"   : "true"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "RQMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "ATIC-011": {
+        "config" : {
+            "active"     : "false",
+            "ensco-unit" : "96",
+            "ensco-name" : "ATGMS7",
+            "CN-id"      : "CNIS412011",
+            "host-can"   : "165.115.109.173",
+            "host-us"    : "NA",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "false"
+            },
+            "SMM" : {
+                "active"   : "false"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "false"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "false"
+            },
+            "TGMS"   : {
+                "active"   : "false"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "RQMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "ATIC-012": {
+        "config" : {
+            "active"     : "false",
+            "ensco-unit" : "97",
+            "ensco-name" : "ATGMS8",
+            "CN-id"      : "CNIS412091",
+            "host-can"   : "165.115.109.159",
+            "host-us"    : "NA",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true"
+            },
+            "TGMS"   : {
+                "active"   : "true"
+            },
+            "Gage/RPMS"   : {
+                "active"   : "true"
+            },
+            "RQMS"   : {
+                "active"   : "true"
+            },
+            "LOCD/GIS"   : {
+                "active"   : "true"
+            },
+            "Exception"   : {
+                "active"   : "true"
+            },
+            "Applanix"   : {
+                "active"   : "false"
+            }
+        }
+    },
+    "QA-001": {
+        "config" : {
+            "ensco-unit" : "999",
+            "ensco-name" : "CN-QA",
+            "CN-id"      : "ATIC000003",
+            "host-can"   : "165.115.109.186",
+            "host-us"    : "NA",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            }
+        }
+    },
+    "LOBSLab": {
+        "config" : {
+            "ensco-unit" : "88",
+            "ensco-name" : "NA",
+            "CN-id"      : "NA",
+            "host-us"    : "10.184.2.122",
+            "host-can"   : "165.115.109.113",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "WCM" : {
+                "active"   : "true"
+            },
+            "SMM" : {
+                "active"   : "true"
+            },
+            "SA"   : {
+                "active"   : "true"
+            },
+            "HPEAP-1-VM"   : {
+                "active"   : "true"
+            },
+            "HPEAP-2-VM"   : {
+                "active"   : "true"
+            }
+        }
+    }
+}
