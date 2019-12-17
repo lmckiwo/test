@@ -194,7 +194,7 @@ class TestStatus(unittest.TestCase):
     ##########################
 
     def test_Status_getHosts(self):
-        self.assertEqual(self.status.getHosts(), sorted(['BAD-HOST', 'HOST-001', 'HOST-002', 'QA-001']))
+        self.assertEqual(sorted(self.status.getHosts()), sorted(['BAD-HOST', 'HOST-001', 'HOST-002', 'QA-001']))
 
     def test_Status_getConfigParams(self):
         self.assertEqual(sorted(self.status.getConfigParams(self.testHost1)), sorted(['active', 'host-us', 'host-can', 'wifi']))
