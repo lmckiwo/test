@@ -70,6 +70,9 @@ jobs:
                  #sudo nc -z $IP 22
                  #echo $?
                  docker exec mockssh ip a
+                 docker exec mockssh apt update
+                 docker exec mockssh apt install -y net-tools
+                 docker exec mockssh netstat -an | grep -w 2222
                  ssh -p 2222 testadmin@$IP
 
 
