@@ -342,12 +342,12 @@ class TestATICHosts(unittest.TestCase):
         self.assertFalse(self.atic.isVendorExists("VENDOR11"))
 
 
-    # def test_isVendorNodeAlive(self):
-    #     (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
-    #     print (ok, res)
-    #     self.assertTrue(ok)
-    #     (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
-    #     self.assertFalse(ok)
+    def test_isVendorNodeAlive(self):
+        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
+        print (ok, res)
+        self.assertTrue(ok)
+        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
+        self.assertFalse(ok)
 
 #     def test_isVendorNodeExistsForCar(self):
 #         self.assertTrue(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node4))
