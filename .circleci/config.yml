@@ -86,6 +86,8 @@ jobs:
                  echo
                  echo 'hosts file'
                  cat ../test/hosts2.json.test.orig
+                 echo
+                 echo IP FOUND IS: $IP
                  for i in *.json.test.orig; do
                    sed -i s"/127.0.0.1/$IP/g" $i
                  done
