@@ -1,0 +1,203 @@
+{
+    "HOST-001": {
+        "config": {
+            "active": "",
+            "host-us": "4.3.4.119",
+            "host-can": "1.2.3.99",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "HOST1": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST2": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST3": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST4": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST5": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST1": {
+                "vendor": "vendor1",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST2": {
+                "vendor": "vendor1",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST3": {
+                "vendor": "vendor1",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "HOST-002": {
+        "config": {
+            "active": "",
+            "host-us": "4.3.4.127",
+            "host-can": "1.2.3.165",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "HOST1": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST2": {
+                "vendor": "vendor0",
+                "active": "false",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST3": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST4": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST5": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST1": {
+                "vendor": "vendor1",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST2": {
+                "vendor": "vendor1",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST3": {
+                "vendor": "vendor1",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "QA-001": {
+        "config": {
+            "active": "",
+            "host-us": "127.0.0.1",
+            "host-can": "1.2.3.186",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "HOST1": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST2": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST3": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "HOST4": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST1": {
+                "vendor": "vendor1",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            },
+            "VENDORHOST2": {
+                "vendor": "vendor1",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    },
+    "BAD-HOST": {
+        "config": {
+            "active": "",
+            "host-us": "65.0.0.1",
+            "host-can": "1.2.3.186",
+            "wifi": "NA"
+        },
+        "nodes": {
+            "HOST1": {
+                "vendor": "vendor0",
+                "active": "true",
+                "u_connected": "",
+                "c_connected": "",
+                "alive": ""
+            }
+        }
+    }
+}

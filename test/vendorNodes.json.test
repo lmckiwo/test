@@ -1,0 +1,19 @@
+{
+    "VENDOR1" : {
+        "nodes"  : {
+            "VENDORHOST1"       : "192.206.233.190",
+            "VENDORHOST2"       : "129.0.0.1",
+            "VENDORHOST3"       : "192.206.233.180",
+            "VENDORHOST4"   : "192.206.233.210",
+            "VENDORHOST5"  : "192.206.233.211",
+            "VENDORHOST6"   : "192.206.233.91",
+            "VENDORHOST7"        : "127.0.0.1",
+            "VENDORHOST8"        : "192.206.233.252"
+         }
+    },
+    "VENDOR2" : {
+        "nodes"  : {
+            "TT"         : "offline"
+        }
+    }
+}

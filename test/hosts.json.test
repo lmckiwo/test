@@ -1,0 +1,188 @@
+{
+    "default": {
+        "config"  : {
+            "ensco-unit" : "90",
+            "ensco-name" : "AVENDORHOST11",
+            "CN-id"      : "12346",
+            "host-can"   : "1.2.3.99",
+            "host-us"    : "4.3.4.119",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "HOST1" : {
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "password",
+                "ssh"      : "true",
+                "vendor"   : "vendor0"
+            },
+            "HOST2" : {
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "password",
+                "ssh"      : "true",
+                "vendor"   : "vendor0"
+            },
+            "HOST3"   : {
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "password",
+                "ssh"      : "true",
+                "vendor"   : "vendor0"
+            },
+            "HOST4"   : {
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "password",
+                "ssh"      : "true",
+                "vendor"   : "vendor0"
+            },
+            "HOST5"   : {
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "password",
+                "ssh"      : "true",
+                "vendor"   : "vendor0"
+            },
+            "VENDORHOST1"   : {
+                "active"   : "true",
+                "ssh"      : "false",
+                "vendor"   : "vendor1"
+            },
+            "VENDORHOST2"   : {
+                "active"   : "true",
+                "ssh"      : "false",
+                "vendor"   : "vendor1"
+            },
+            "VENDORHOST3"   : {
+                "active"   : "false",
+                "ssh"      : "false",
+                "vendor"   : "vendor1"
+            }
+        }
+    },
+    "HOST-001": {
+        "config"   : {
+            "ensco-unit" : "90",
+            "ensco-name" : "AVENDORHOST11",
+            "CN-id"      : "9987",
+            "host-can"   : "1.2.3.99",
+            "host-us"    : "4.3.4.119"        },
+        "nodes"      :  {
+            "HOST1" : {
+                "active"   : "true",
+                "username" : "root",
+                "port"     : "2500"
+            },
+            "HOST2" : {
+                "active"   : "true"
+            },
+            "HOST3"   : {
+                "active"   : "true"
+            },
+            "HOST4"   : {
+                "active"   : "true"
+            },
+            "HOST5"   : {
+                "active"   : "true"
+            },
+            "VENDORHOST1"   : {
+                "active"   : "true"
+            },
+            "VENDORHOST2"   : {
+                "active"   : "false"
+            },
+            "VENDORHOST3"   : {
+                "active"   : "true"
+            }
+        }
+    },
+    "HOST-002": {
+        "config" : {
+            "ensco-unit" : "91",
+            "ensco-name" : "AVENDORHOST12",
+            "CN-id"      : "12345",
+            "host-can"   : "1.2.3.165",
+            "host-us"    : "4.3.4.127",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "HOST1" : {
+                "active"   : "true"
+            },
+            "HOST2" : {
+                "active"   : "false"
+            },
+            "HOST3"   : {
+                "active"   : "true"
+            },
+            "HOST4"   : {
+                "active"   : "true"
+            },
+            "HOST5"   : {
+                "active"   : "true"
+            },
+            "VENDORHOST1"   : {
+                "active"   : "true"
+            },
+            "VENDORHOST2"   : {
+                "active"   : "true"
+            },
+            "VENDORHOST3"   : {
+                "active"   : "true"
+            }
+        }
+    },
+    "QA-001": {
+        "config" : {
+            "ensco-unit" : "999",
+            "ensco-name" : "CN-QA",
+            "CN-id"      : "None",
+            "host-can"   : "1.2.3.186",
+            "host-us"  : "127.0.0.1",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "HOST1" : {
+                "active"   : "true"
+            },
+            "HOST2" : {
+                "active"   : "true"
+            },
+            "HOST3"   : {
+                "active"   : "true"
+            },
+            "HOST4"   : {
+                "active"   : "true"
+            },
+            "VENDORHOST1"   : {
+                "active"   : "true",
+                "ssh"      : "false",
+                "vendor"   : "vendor1",
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "password"
+            }
+        }
+    },
+    "BAD-HOST": {
+        "config" : {
+            "ensco-unit" : "999",
+            "ensco-name" : "CN-QA",
+            "CN-id"      : "None",
+            "host-can"   : "1.2.3.186",
+            "host-us"    : "65.0.0.1",
+            "wifi"       : "NA"
+        },
+        "nodes"      :  {
+            "HOST1" : {
+                "active"   : "true",
+                "ssh"      : "true",
+                "vendor"   : "vendor0",
+                "username" :  "root",
+                "port"     : "22",
+                "password" : "password"
+        }
+    }
+    }
+}
