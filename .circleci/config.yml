@@ -89,11 +89,11 @@ jobs:
           - run:
               name: install requirements
               command: |
-                python --version
-                pip install -r requirements
+                apt install -y python3
+                pip3 install -r requirements
 
           - run:
               name: run test
               command: |
                 cd alive
-                python test.py
+                python3 test.py
