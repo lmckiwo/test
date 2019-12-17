@@ -101,5 +101,7 @@ jobs:
                 echo
                 echo
                 cat ../test/status.json.test
+                echo 'hosts file'
+                cat ../test/hosts2.json.test.orig
                 sudo python3 test.py
 
