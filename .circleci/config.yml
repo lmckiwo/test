@@ -86,6 +86,11 @@ jobs:
                    sed -i s"/127.0.0.1/$IP/g" $i
                  done
 
+          - run:
+              name: install requirements
+              command: |
+                python --version
+                pip install -r requirements
 
           - run:
               name: run test
