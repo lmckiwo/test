@@ -37,7 +37,7 @@ class paramikoWrapper:
                 self.logger.info("Try # " + str(count) + " to connect to " + host + ":" + str(port))
                 self.client = paramiko.SSHClient()
                 self.client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-                self.client.connect(host, username=user, password=password, port=port, timeout=10)
+                self.client.connect(host, username=user, password=password, port=int(port), timeout=10)
                 self.logger.info ("[" + host + ":" + str(port) + "] - connected")
                 self.channel = self.client.invoke_shell()
 
