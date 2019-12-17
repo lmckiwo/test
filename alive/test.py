@@ -222,7 +222,6 @@ class TestStatus(unittest.TestCase):
         # copy2("status.json.test.orig", "status.json.test")
         self.assertTrue(self.status.read())
         mystuff = deepcopy(self.status.status)
-        print("mystuff: ", mystuff[self.testHost1]["nodes"][self.node1]["active"])
         self.assertTrue(self.status.write())
         self.assertTrue(self.status.read())
         self.assertEqual(self.status.status, mystuff)
@@ -344,7 +343,7 @@ class TestATICHosts(unittest.TestCase):
 
     def test_isVendorNodeAlive(self):
         (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
-        print (ok, res)
+        print ("VENDOR NODE ALIVE",ok, res)
         self.assertTrue(ok)
         (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
         self.assertFalse(ok)

@@ -138,7 +138,7 @@
             "ensco-unit" : "999",
             "ensco-name" : "CN-QA",
             "CN-id"      : "None",
-            "host-can"   : "1.2.3.186",
+            "host-can"   : "NA",
             "host-us"  : "127.0.0.1",
             "wifi"       : "NA"
         },
