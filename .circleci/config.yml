@@ -13,13 +13,13 @@ jobs:
                 chmod +x ~/docker-compose
                 sudo mv ~/docker-compose /usr/local/bin/docker-compose
 
-#          - run:
-#              name: Install python
-#              command: |
-#                sudo apt-get update
-#                sudo add-apt-repository ppa:deadsnakes/ppa
-#                sudo apt-get update
-#                sudo apt install -y python3.6 python3-pip
+          - run:
+              name: Install python
+              command: |
+                sudo apt-get update
+                sudo add-apt-repository ppa:deadsnakes/ppa
+                sudo apt-get update
+                sudo apt install -y python3.6 python3-pip
 #                sudo pip3 install -r requirements.txt
 
           - run:
