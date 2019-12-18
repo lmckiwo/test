@@ -27,6 +27,7 @@ jobs:
               command: |
                 echo about creating virtualenv
                 sudo python3.6 -m venv mock
+                echo virtualenv done
                 . mock/bin/activate
                 echo print python version
                 sudo python --version
