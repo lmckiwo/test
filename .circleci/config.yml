@@ -27,7 +27,7 @@ jobs:
               command: |
                 which python3.6
                 echo about creating virtualenv
-                virtualenv -p python3.6 mock
+                virtualenv -p /opt/circleci/.pyenv/shims/python3.6 mock
                 #sudo python3.6 -m venv mock
                 echo virtualenv done
                 . mock/bin/activate
