@@ -13,15 +13,27 @@ jobs:
                 chmod +x ~/docker-compose
                 sudo mv ~/docker-compose /usr/local/bin/docker-compose
 
+#          - run:
+#              name: Install python
+#              command: |
+#                sudo apt-get update
+#                sudo add-apt-repository ppa:deadsnakes/ppa
+#                sudo apt-get update
+#                sudo apt install -y python3.6 python3-pip
+#                sudo pip3 install -r requirements.txt
+
           - run:
-              name: Install python
+              name: Creating virtualenv
               command: |
-                sudo apt-get update
-                sudo add-apt-repository ppa:deadsnakes/ppa
-                sudo apt-get update
-                sudo apt install -y python3.6 python3-pip
-                sudo pip3 install -r requirements.txt
-   
+                sudo python3.6 -m venv mock
+                . mock/bin/activate
+                echo print python version
+                python --version
+                sudo pip3 freeze
+                sudo python3.6 --version
+                echo import paramiko
+                sudo python3.6 -c "import paramiko"
+
           - run:
               name: check version
               command: |
