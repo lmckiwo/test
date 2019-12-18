@@ -25,10 +25,11 @@ jobs:
           - run:
               name: Creating virtualenv
               command: |
+                echo about creating virtualenv
                 sudo python3.6 -m venv mock
                 . mock/bin/activate
                 echo print python version
-                python --version
+                sudo python --version
                 sudo pip3 freeze
                 sudo python3.6 --version
                 echo import paramiko
