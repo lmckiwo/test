@@ -16,6 +16,7 @@ jobs:
           - run:
               name: Install python
               command: |
+                cat /etc/lsb-release*
                 sudo apt update
                 sudo apt install -y python3.6 python3-pip
                 sudo pip3 install -r requirements.txt
