@@ -8,8 +8,8 @@ jobs:
           - checkout
           - setup_remote_docker
 
-        steps:
-          - checkout
+#         steps:
+#           - checkout
 #           - run:
 #               name: Install Docker Compose
 #               command: |
