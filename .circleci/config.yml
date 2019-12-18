@@ -1,17 +1,21 @@
 version: 2
 jobs:
   build:
-        machine:
-                image: ubuntu-1604:201903-01
+       docker:
+          - image: circleci/node:8.11
+
+       steps:
+          - checkout
+          - setup_remote_docker
 
         steps:
           - checkout
-          - run:
-              name: Install Docker Compose
-              command: |
-                curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
-                chmod +x ~/docker-compose
-                sudo mv ~/docker-compose /usr/local/bin/docker-compose
+#           - run:
+#               name: Install Docker Compose
+#               command: |
+#                 curl -L https://github.com/docker/compose/releases/download/1.19.0/docker-compose-`uname -s`-`uname -m` > ~/docker-compose
+#                 chmod +x ~/docker-compose
+#                 sudo mv ~/docker-compose /usr/local/bin/docker-compose
 
           - run:
               name: Install python
@@ -20,6 +24,7 @@ jobs:
                 sudo add-apt-repository ppa:deadsnakes/ppa
                 sudo apt-get update
                 sudo apt install -y python3.6 python3-pip
+                ls
 #                sudo pip3 install -r requirements.txt
 
           - run:
