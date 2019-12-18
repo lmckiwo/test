@@ -24,6 +24,7 @@ jobs:
               name: check version
               command: |
                 sudo python3 --version
+                pip3 freeze
    
           - run:
               name: check ip
