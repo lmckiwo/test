@@ -25,6 +25,7 @@ jobs:
           - run:
               name: Creating virtualenv
               command: |
+                which python3.6
                 echo about creating virtualenv
                 virtualenv -p python3.6 mock
                 #sudo python3.6 -m venv mock
