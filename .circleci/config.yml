@@ -27,7 +27,7 @@ jobs:
               command: |
                 sudo python3 --version
                 sudo pip3 freeze
-                
+                sudo python3.6 --version
    
    
           - run:
