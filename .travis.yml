@@ -9,14 +9,16 @@ services:
 before_install:
 #- docker build -t mockssh .
 - ls -l
-- docker ps -a
-- docker cp mock_F5.py .
-- docker run -d -p 22:2201 --name mockssh mockssh
-- docker ps -a
-- docker inspect mockssh
-- netstat -an | grep -w 2201
+# - docker ps -a
+# - docker cp mock_F5.py .
+# - docker run -d -p 22:2201 --name mockssh mockssh
+# - docker ps -a
+# - docker inspect mockssh
+# - netstat -an | grep -w 2201
 
 script:
+  - docker ps -a
+  - docker build -t mockssh .
   - cd alive
   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
   - cp ../test/status.json.test ../test/status.json.test.orig
