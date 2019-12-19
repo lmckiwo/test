@@ -1,7 +1,7 @@
 language: python
 
 python:
-  - 2.7
+  - 3.6
 
 services:
   - docker
@@ -17,9 +17,12 @@ before_install:
 # - netstat -an | grep -w 2201
 
 script:
-  - docker ps -a
   - docker build -t mockssh .
-  - cd alive
-  - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
-  - cp ../test/status.json.test ../test/status.json.test.orig
-  - python test.py
+  - docker run -d -p 22:2201 --name mockssh mockssh
+  - docker ps -a
+  - docker inspect mockssh
+
+#   - cd alive
+#   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
+#   - cp ../test/status.json.test ../test/status.json.test.orig
+#   - python test.py
