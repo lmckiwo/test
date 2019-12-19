@@ -14,9 +14,10 @@ script:
   - docker build -t mockssh .
   - docker run -d -p 2222:2201 --name mockssh mockssh
   - docker ps -a
-  - docker inspect mockssh | grep IPAddress
+  - IP=$(docker inspect mockssh | awk -F: '/IPAddress/{print $2}' | tr -d '"' | tr -d "," | tail -1)
+  - echo IP address is $IP
   - netstat -an | grep 2201
-  - nc -z localhost 2201
+  - nc -z $IP 2201
 
 #   - cd alive
 #   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
