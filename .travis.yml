@@ -9,6 +9,7 @@ services:
 before_install:
 #- docker build -t mockssh .
 - ls -l
+- docker ps -a
 - docker cp mock_F5.py .
 - docker run -d -p 22:2201 --name mockssh mockssh
 - docker ps -a
