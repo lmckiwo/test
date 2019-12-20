@@ -18,6 +18,8 @@ script:
   - echo IP address is $IP
   - netstat -an | grep 2201
   - nc -z $IP 2201
+  - nc --help
+  - netstat -an
 
 
 #   - cd alive
