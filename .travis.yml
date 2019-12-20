@@ -6,9 +6,9 @@ python:
 services:
   - docker
 
-before_install:
-#- docker build -t mockssh .
-  - ls -l
+# before_install:
+# #- docker build -t mockssh .
+#   - ls -l
 
 script:
   - docker build -t mockssh .
