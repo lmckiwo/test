@@ -21,7 +21,6 @@ script:
   - nc --help
   - netstat -an
 
-
 #   - cd alive
 #   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
 #   - cp ../test/status.json.test ../test/status.json.test.orig
