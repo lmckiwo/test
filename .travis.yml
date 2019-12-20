@@ -17,6 +17,8 @@ script:
   - docker inspect mockssh | grep IPAddress
   - netstat -an | grep 2201
   - nc -z localhost 2201
+  - nc --version
+  - netstat -an
 
 #   - cd alive
 #   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
