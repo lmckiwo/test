@@ -14,12 +14,12 @@ script:
   - docker build -t mockssh .
   - docker run -d -p 2222:2201 --name mockssh mockssh
   - docker ps -a
-  - docker inspect
+  - docker inspect mockssh
   - IP=$(docker inspect mockssh | grep IPAddress | tail -1 | awk '{print $2}' | tr -d '"' | tr -d ",")
   - echo IP address is $IP
   - netstat -an | grep 2201
   - netstat -an
-  - ssh -p 2222 root@localhost
+  - ssh -p 2222 root@$IP
   - docker logs mockssh
   
 
