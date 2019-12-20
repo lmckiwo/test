@@ -14,7 +14,8 @@ script:
   - docker build -t mockssh .
   - docker run -d -p 2222:2201 --name mockssh mockssh
   - docker ps -a
-  - docker inspect mockssh | grep IPAddress | tail -1 | awk '{print $2}' | tr -d '"' | tr -d ","
+  - IP=$(docker inspect mockssh | grep IPAddress | tail -1 | awk '{print $2}' | tr -d '"' | tr -d ",")
+  - echo IP address is $IP
   - netstat -an | grep 2201
   - nc -z localhost 2201
   - nc --version
