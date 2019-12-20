@@ -17,8 +17,8 @@ script:
   - IP=$(docker inspect mockssh | awk -F: '/IPAddress/{print $2}' | tr -d '"' | tr -d "," | tail -1)
   - echo IP address is $IP
   - netstat -an | grep 2201
-  - nc -z $IP 2201
-  - netstat -an
+#   - nc -z $IP 2201
+#   - netstat -an
 
 #   - cd alive
 #   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
