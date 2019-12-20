@@ -6,6 +6,10 @@ python:
 services:
   - docker
 
+before_install:
+#- docker build -t mockssh .
+  - ls -l
+
 script:
   - docker build -t mockssh .
   - docker run -d -p 2222:2201 --name mockssh mockssh
@@ -13,3 +17,10 @@ script:
   - IP=$(docker inspect mockssh | awk -F: '/IPAddress/{print $2}' | tr -d '"' | tr -d "," | tail -1)
   - echo IP address is $IP
   - netstat -an | grep 2201
+#   - nc -z $IP 2201
+#   - netstat -an
+
+#   - cd alive
+#   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
+#   - cp ../test/status.json.test ../test/status.json.test.orig
+#   - python test.py
