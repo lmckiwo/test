@@ -467,8 +467,6 @@ if __name__ == "__main__":
 #     ## # suite.addTest(TestATICHosts("test_isNodeInHost"))
 #     ## # suite.addTest(TestATICHosts("test_isRemoteIndexExists"))
 #     ## # suite.addTest(TestATICHosts("test_isVendorExists"))
-<<<<<<< HEAD
-=======
     suite.addTest(TestATICHosts("test_isVendorNodeAlive"))
     # # suite.addTest(TestATICHosts("test_isVendorNodeExistsForCar"))
 
@@ -520,8 +518,6 @@ if __name__ == "__main__":
 #     #suite.addTest(TestATICHosts("test_nc"))
 #     #suite.addTest(TestATICHosts("test_isACCNodeAlive"))
 #     # suite.addTest(TestATICHosts("test_getOS"))
-
->>>>>>> 0180510bc824b1a8cda122d0bc05d31e8c937622
 
     runner = unittest.TextTestRunner()
     runner.run(suite)
