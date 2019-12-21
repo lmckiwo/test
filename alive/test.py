@@ -194,7 +194,7 @@ class TestStatus(unittest.TestCase):
     ##########################
 
     def test_Status_getHosts(self):
-        self.assertEqual(sorted(self.status.getHosts()), sorted(['BAD-HOST', 'HOST-001', 'HOST-002', 'QA-001']))
+        self.assertEqual(self.status.getHosts(), ['HOST-001', 'HOST-002', 'QA-001', 'BAD-HOST'])
 
     def test_Status_getConfigParams(self):
         self.assertEqual(sorted(self.status.getConfigParams(self.testHost1)), sorted(['active', 'host-us', 'host-can', 'wifi']))
@@ -222,6 +222,7 @@ class TestStatus(unittest.TestCase):
         # copy2("status.json.test.orig", "status.json.test")
         self.assertTrue(self.status.read())
         mystuff = deepcopy(self.status.status)
+        print("mystuff: ", mystuff[self.testHost1]["nodes"][self.node1]["active"])
         self.assertTrue(self.status.write())
         self.assertTrue(self.status.read())
         self.assertEqual(self.status.status, mystuff)
@@ -341,18 +342,18 @@ class TestATICHosts(unittest.TestCase):
         self.assertFalse(self.atic.isVendorExists("VENDOR11"))
 
 
-    def test_isVendorNodeAlive(self):
-        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
-        print ("VENDOR NODE ALIVE",ok, res)
-        self.assertTrue(ok)
-        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
-        self.assertFalse(ok)
+    # def test_isVendorNodeAlive(self):
+    #     (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
+    #     print (ok, res)
+    #     self.assertTrue(ok)
+    #     (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
+    #     self.assertFalse(ok)
 
-#     def test_isVendorNodeExistsForCar(self):
-#         self.assertTrue(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node4))
-#         self.assertFalse(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node3))
-#         self.assertFalse(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="TT", node=self.node3))
-#         self.assertTrue(self.atic.isVendorNodeExistsForCar(car=self.testHost1, vendor="VENDOR1", node=self.node3))
+    def test_isVendorNodeExistsForCar(self):
+        self.assertFalse(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node4))
+        self.assertTrue(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node3))
+        self.assertFalse(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="TT", node=self.node3))
+        self.assertTrue(self.atic.isVendorNodeExistsForCar(car=self.testHost1, vendor="VENDOR1", node=self.node3))
 
 
 #     def test_connect(self):
@@ -402,9 +403,9 @@ class TestATICHosts(unittest.TestCase):
 #         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
 #         self.assertFalse(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
 
-#     def test_ping(self):
+    def test_ping(self):
 #         self.assertTrue(self.atic.connectHost(car="QA-001", node="HOST2"))
-#         self.assertTrue(self.atic.ping("127.0.0.1"))
+        self.assertTrue(self.atic.ping("google.com"))
 #         self.assertTrue(self.atic.ping(ip="127.0.0.1"))
 #         self.assertFalse(self.atic.ping(ip="129.0.1.1"))
 #         self.assertTrue(self.atic.ping(ip="192.168.2.23"))
@@ -458,58 +459,6 @@ if __name__ == "__main__":
 #     ## # suite.addTest(TestATICHosts("test_isNodeInHost"))
 #     ## # suite.addTest(TestATICHosts("test_isRemoteIndexExists"))
 #     ## # suite.addTest(TestATICHosts("test_isVendorExists"))
-    # suite.addTest(TestATICHosts("test_isVendorNodeAlive"))
-    # # suite.addTest(TestATICHosts("test_isVendorNodeExistsForCar"))
-
-#     suite.addTest(TestStatus("test_readJson"))
-#     ## suite.addTest(TestStatus("test_getKeys"))
-#     ## # suite.addTest(TestStatus("test_safeGet"))
-#     ## suite.addTest(TestStatus("test_getHosts"))
-#     ## suite.addTest(TestStatus("test_getConfigParams"))
-#     ## suite.addTest(TestStatus("test_getNodes"))
-#     ## suite.addTest(TestStatus("test_getConfigValue"))
-#     ## suite.addTest(TestStatus("test_getNodeParams"))
-#     ## suite.addTest(TestStatus("test_getNodeParamValue"))
-
-#     ## suite.addTest(TestStatus("test_getVendors"))
-#     ## suite.addTest(TestStatus("test_getVendorNodes"))
-#     ## suite.addTest(TestStatus("test_getVendorNodeIP"))
-#     ## suite.addTest(TestStatus("test_isVendorExists"))
-#     ## suite.addTest(TestStatus("test_isVendorNodeExists"))
-#     ## suite.addTest(TestStatus("test_Status_getHosts"))
-#     ## suite.addTest(TestStatus("test_Status_getConfigParams"))
-#     ## suite.addTest(TestStatus("test_Status_getNodes"))
-#     ## suite.addTest(TestStatus("test_Status_getConfigValue"))
-#     ## suite.addTest(TestStatus("test_Status_getNodeParams"))
-#     ## suite.addTest(TestStatus("test_Status_getNodeParamValue"))
-#     ## suite.addTest(TestStatus("test_setNodeParamValue"))
-#     ## suite.addTest(TestStatus("test_read"))
-#     ## suite.addTest(TestStatus("test_write"))
-#     ## suite.addTest(TestStatus("test_getHostIP"))
-#     #suite.addTest(TestStatus("test_getHostNodePort"))
-
-
-
-
-#     # suite.addTest(TestStatus("test_setHostConfigParamValue"))
-#     # suite.addTest(TestStatus("test_setHostNodeParamValue"))
-#     # suite.addTest(TestStatus("test_setConfigDefault"))
-#     # suite.addTest(TestStatus("test_setNodeDefault"))
-
-
-
-#     ## suite.addTest(TestStatusHandler("test_ReadStatus"))
-#     ## suite.addTest(TestStatusHandler("test_WriteStatus"))
-
-
-
-#     ## # suite.addTest(TestATICHosts("test_disconnectHost"))
-#     ## # suite.addTest(TestATICHosts("test_runCommand"))
-#     # suite.addTest(TestATICHosts("test_ping"))
-#     #suite.addTest(TestATICHosts("test_nc"))
-#     #suite.addTest(TestATICHosts("test_isACCNodeAlive"))
-#     # suite.addTest(TestATICHosts("test_getOS"))
-
 
     # runner = unittest.TextTestRunner()
     # runner.run(suite)

@@ -11,35 +11,35 @@
         "nodes"      :  {
             "HOST1" : {
                 "username" :  "root",
-                "port"     : "2222",
+                "port"     : "22",
                 "password" : "password",
                 "ssh"      : "true",
                 "vendor"   : "vendor0"
             },
             "HOST2" : {
                 "username" :  "root",
-                "port"     : "2222",
+                "port"     : "22",
                 "password" : "password",
                 "ssh"      : "true",
                 "vendor"   : "vendor0"
             },
             "HOST3"   : {
                 "username" :  "root",
-                "port"     : "2222",
+                "port"     : "22",
                 "password" : "password",
                 "ssh"      : "true",
                 "vendor"   : "vendor0"
             },
             "HOST4"   : {
                 "username" :  "root",
-                "port"     : "2222",
+                "port"     : "22",
                 "password" : "password",
                 "ssh"      : "true",
                 "vendor"   : "vendor0"
             },
             "HOST5"   : {
                 "username" :  "root",
-                "port"     : "2222",
+                "port"     : "22",
                 "password" : "password",
                 "ssh"      : "true",
                 "vendor"   : "vendor0"
@@ -138,7 +138,7 @@
             "ensco-unit" : "999",
             "ensco-name" : "CN-QA",
             "CN-id"      : "None",
-            "host-can"   : "NA",
+            "host-can"   : "1.2.3.186",
             "host-us"  : "127.0.0.1",
             "wifi"       : "NA"
         },
@@ -160,7 +160,7 @@
                 "ssh"      : "false",
                 "vendor"   : "vendor1",
                 "username" :  "root",
-                "port"     : "2222",
+                "port"     : "22",
                 "password" : "password"
             },
             "VENDORHOST2"   : {
@@ -168,7 +168,7 @@
                 "ssh"      : "false",
                 "vendor"   : "vendor1",
                 "username" :  "root",
-                "port"     : "2222",
+                "port"     : "22",
                 "password" : "password"
             }
         }
