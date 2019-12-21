@@ -423,11 +423,11 @@ class TestATICHosts(unittest.TestCase):
 #         self.assertTrue(self.atic.ping(car="QA-001", ip="127.0.0.1", gwNode="HOST2"))
 #         self.assertFalse(self.atic.ping(car="QA-001", ip="131.4.0.1", gwNode="HOST2"))
 
-#     def test_runCommand(self):
-#         self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
-#         self.assertTrue(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
-#         # self.assertFalse(self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['eth0', 'wlan0', 'lo', 'eth19']))
+    def test_runCommand(self):
+        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
+        self.assertTrue(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
+#         self.assertFalse(self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['eth0', 'wlan0', 'lo', 'eth19']))
 #         retVal, output, err = self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['enp2s0', 'wlp3s0', 'lo', 'eth19'])
 #         self.assertFalse(retVal)
 #         # self.assertFalse(self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['eth0', 'wlan0', 'lo', 'l1']))
@@ -435,8 +435,8 @@ class TestATICHosts(unittest.TestCase):
 #         self.assertFalse(retVal)
 #         retVal, output, err = self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['enp2s0', 'wlp3s0', 'lo'])
 #         self.assertTrue(retVal)
-#         retVal, output, err = self.atic.runCommand(self.testHost2, self.node2, "ping -c1 -w1 127.0.0.1", FalseIf=[' 100% packet loss'])
-#         self.assertTrue(retVal)
+        retVal, output, err = self.atic.runCommand(self.testHost2, self.node2, "ping -c1 -w1 127.0.0.1", FalseIf=[' 100% packet loss'])
+        self.assertTrue(retVal)
 
 #     def test_getOS(self):
 #         self.assertTrue(self.atic.connectHost(car="QA-001", node="HOST2"))
