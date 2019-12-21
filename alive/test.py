@@ -398,20 +398,20 @@ class TestATICHosts(unittest.TestCase):
         self.assertTrue(self.atic.isConnected(self.testHost2, self.node2))
         self.atic._disconnect(self.testHost2, self.node2)
 
-#     def test_disconnectHost(self):
-#         self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
-#         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.NOTCONNECTED)
-#         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.NOTCONNECTED)
+    def test_disconnectHost(self):
+        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
+        self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.NOTCONNECTED)
+        self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.NOTCONNECTED)
 
-#     def test_isRemoteIndexExists(self):
-#         self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
-#         self.assertTrue(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
-#         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
-#         self.assertFalse(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
+    def test_isRemoteIndexExists(self):
+        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
+        self.assertTrue(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
+        self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
+        self.assertFalse(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
 
     def test_ping(self):
 #         self.assertTrue(self.atic.connectHost(car="QA-001", node="HOST2"))
