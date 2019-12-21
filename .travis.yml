@@ -25,6 +25,7 @@ script:
 
   - cd alive
   - sed -i s"/127.0.0.1/$IP"  ../test/hosts2.json.test.orig
+  - sed s"/127.0.0.1/$IP"  ../test/hosts2.json.test.orig
   - sed -i s'/"22"/"2222"/p' ../test/hosts2.json.test.orig
   - cat ../test/hosts2.json.test.orig
   - python createStatus.py --hostFile ../test/hosts2.json.test.orig --vendorFile ../test/vendorNodes.json.test --statusFile ../test/status.json.test
