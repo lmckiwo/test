@@ -17,8 +17,8 @@ script:
   - docker inspect mockssh
   - IP=$(docker inspect mockssh | grep IPAddress | tail -1 | awk '{print $2}' | tr -d '"' | tr -d ",")
   - echo IP address is $IP
-#  - ssh -p 2222 root@$IP
   - docker logs mockssh
+  - docker exec -ti mockssh ip a
   
 
   - cd alive
