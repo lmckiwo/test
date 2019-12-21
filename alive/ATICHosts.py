@@ -95,7 +95,7 @@ class ATICHosts(Hosts, Vendors):
         if self.getNodeParamValue(car, node, "ssh") == "true":
             if not self.isConnected(car, node):
                 for apn in self.apnList:
-                    print ("CHECKING APN", apn)
+                    print ("CHECKING APN", apn, "for car", car, "node", node)
                     ipAddress = self.getHostIP(car, apn)
                     port = self.getHostNodePort(car, node)
                     if ipAddress != "NA":
