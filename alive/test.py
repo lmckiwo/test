@@ -366,14 +366,14 @@ class TestATICHosts(unittest.TestCase):
         self.assertTrue(self.atic.isVendorNodeExistsForCar(car=self.testHost1, vendor="VENDOR1", node=self.node3))
 
 
-#     def test_connect(self):
-#         # copy2('hosts.json.test', 'hosts.json')
-#         self.assertTrue(self.atic._connect(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
-#         self.assertTrue(self.atic._connect(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
-#         self.assertFalse(self.atic._connect(self.testHost3, self.node1))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "connected"), self.atic.NOTCONNECTED)
+    def test_connect(self):
+        # copy2('hosts.json.test', 'hosts.json')
+        self.assertTrue(self.atic._connect(self.testHost2, self.node2))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
+        self.assertTrue(self.atic._connect(self.testHost2, self.node2))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
+        self.assertFalse(self.atic._connect(self.testHost3, self.node1))
+        self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "connected"), self.atic.NOTCONNECTED)
 
 #     def test_isConnected(self):
 #         self.assertTrue(self.atic._connect(self.testHost2, self.node2))
