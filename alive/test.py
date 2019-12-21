@@ -300,6 +300,8 @@ class TestATICHosts(unittest.TestCase):
     def setUp(self):
         from ATICHosts import ATICHosts
         from statusHandler import statusHandler
+
+        copy2(testFilesLocation + "hosts2.json.test.orig", testFilesLocation + "hosts.json.test")
         self.atic = ATICHosts(hostFile=testFilesLocation + 'hosts.json.test', \
                               vendorFile=testFilesLocation + 'vendorNodes.json.test', \
                               statusFile=testFilesLocation + 'status.json.test')
