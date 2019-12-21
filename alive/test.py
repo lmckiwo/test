@@ -465,14 +465,14 @@ class TestATICHosts(unittest.TestCase):
 #         self.assertTrue(self.atic.isACCNodeAlive(self.testHost2, self.node2))
 
 if __name__ == "__main__":
-#     unittest.main()
+    unittest.main()
 
-    suite = unittest.TestSuite()
+#     suite = unittest.TestSuite()
 #     ## # suite.addTest(TestATICHosts("test_isNodeForVendor"))
 #     ## # suite.addTest(TestATICHosts("test_isNodeInHost"))
 #     ## # suite.addTest(TestATICHosts("test_isRemoteIndexExists"))
 #     ## # suite.addTest(TestATICHosts("test_isVendorExists"))
-    suite.addTest(TestATICHosts("test_isVendorNodeAlive"))
+#     suite.addTest(TestATICHosts("test_isVendorNodeAlive"))
     # # suite.addTest(TestATICHosts("test_isVendorNodeExistsForCar"))
 
 #     suite.addTest(TestStatus("test_readJson"))
@@ -524,5 +524,5 @@ if __name__ == "__main__":
 #     #suite.addTest(TestATICHosts("test_isACCNodeAlive"))
 #     # suite.addTest(TestATICHosts("test_getOS"))
 
-    runner = unittest.TextTestRunner()
-    runner.run(suite)
+#     runner = unittest.TextTestRunner()
+#     runner.run(suite)
