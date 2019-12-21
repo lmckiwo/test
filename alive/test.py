@@ -349,13 +349,13 @@ class TestATICHosts(unittest.TestCase):
     #     (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
     #     self.assertFalse(ok)
 
-#    def test_isVendorNodeAlive(self):
-#        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
-#        print ("VENDOR NODE ALIVE",ok, res)
-#        print("car is",self.testHost2, "node",self.node3, "vendor VENDOR1 gwNode HOST2")
-#        self.assertTrue(ok)
-#        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
-#        self.assertFalse(ok)
+    def test_isVendorNodeAlive(self):
+        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
+        print ("VENDOR NODE ALIVE",ok, res)
+        print("car is",self.testHost2, "node",self.node3, "vendor VENDOR1 gwNode HOST2")
+        self.assertTrue(ok)
+        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
+        self.assertFalse(ok)
 
     def test_isVendorNodeExistsForCar(self):
         self.assertFalse(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node4))
