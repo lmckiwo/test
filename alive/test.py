@@ -438,6 +438,9 @@ class TestATICHosts(unittest.TestCase):
         retVal, output, err = self.atic.runCommand(self.testHost2, self.node2, "ping -c1 -w1 127.0.0.1", FalseIf=[' 100% packet loss'])
         self.assertTrue(retVal)
 
+        retVal, output, err = self.atic.runCommand(self.testHost2, self.node2, "pwd", TrueIf=['/root'])
+        self.assertTrue(retVal)
+
 #     def test_getOS(self):
 #         self.assertTrue(self.atic.connectHost(car="QA-001", node="HOST2"))
 
