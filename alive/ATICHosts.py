@@ -303,8 +303,11 @@ class ATICHosts(Hosts, Vendors):
                 #     return
 
                 for apn in self.apnList:
+                    print("apn is", apn)
                     ip = self.getHostIP(car, apn=apn)
                     port = self.getNodeParamValue(car, node, "port")
+                    print ("car is",car, "node is", node)
+                    print ("ip and port",ip, port)
                     if ip != "" and port != "":
                         if not self.nc(ip, port):
                             self.status.writeStatus(car, node, self.apnList[apn][1], self.NOTCONNECTED)

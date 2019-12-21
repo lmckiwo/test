@@ -349,6 +349,14 @@ class TestATICHosts(unittest.TestCase):
     #     (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
     #     self.assertFalse(ok)
 
+#    def test_isVendorNodeAlive(self):
+#        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node3, vendor="VENDOR1", gwNode="HOST2")
+#        print ("VENDOR NODE ALIVE",ok, res)
+#        print("car is",self.testHost2, "node",self.node3, "vendor VENDOR1 gwNode HOST2")
+#        self.assertTrue(ok)
+#        (ok,res) = self.atic.isVendorNodeAlive(car=self.testHost2, node=self.node4, vendor="VENDOR1", gwNode="HOST2")
+#        self.assertFalse(ok)
+
     def test_isVendorNodeExistsForCar(self):
         self.assertFalse(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node4))
         self.assertTrue(self.atic.isVendorNodeExistsForCar(car=self.testHost2, vendor="VENDOR1", node=self.node3))
@@ -452,13 +460,68 @@ class TestATICHosts(unittest.TestCase):
 #         self.assertTrue(self.atic.isACCNodeAlive(self.testHost2, self.node2))
 
 if __name__ == "__main__":
-    unittest.main()
+#     unittest.main()
 
-    # suite = unittest.TestSuite()
+    suite = unittest.TestSuite()
 #     ## # suite.addTest(TestATICHosts("test_isNodeForVendor"))
 #     ## # suite.addTest(TestATICHosts("test_isNodeInHost"))
 #     ## # suite.addTest(TestATICHosts("test_isRemoteIndexExists"))
 #     ## # suite.addTest(TestATICHosts("test_isVendorExists"))
+<<<<<<< HEAD
+=======
+    suite.addTest(TestATICHosts("test_isVendorNodeAlive"))
+    # # suite.addTest(TestATICHosts("test_isVendorNodeExistsForCar"))
 
-    # runner = unittest.TextTestRunner()
-    # runner.run(suite)
+#     suite.addTest(TestStatus("test_readJson"))
+#     ## suite.addTest(TestStatus("test_getKeys"))
+#     ## # suite.addTest(TestStatus("test_safeGet"))
+#     ## suite.addTest(TestStatus("test_getHosts"))
+#     ## suite.addTest(TestStatus("test_getConfigParams"))
+#     ## suite.addTest(TestStatus("test_getNodes"))
+#     ## suite.addTest(TestStatus("test_getConfigValue"))
+#     ## suite.addTest(TestStatus("test_getNodeParams"))
+#     ## suite.addTest(TestStatus("test_getNodeParamValue"))
+
+#     ## suite.addTest(TestStatus("test_getVendors"))
+#     ## suite.addTest(TestStatus("test_getVendorNodes"))
+#     ## suite.addTest(TestStatus("test_getVendorNodeIP"))
+#     ## suite.addTest(TestStatus("test_isVendorExists"))
+#     ## suite.addTest(TestStatus("test_isVendorNodeExists"))
+#     ## suite.addTest(TestStatus("test_Status_getHosts"))
+#     ## suite.addTest(TestStatus("test_Status_getConfigParams"))
+#     ## suite.addTest(TestStatus("test_Status_getNodes"))
+#     ## suite.addTest(TestStatus("test_Status_getConfigValue"))
+#     ## suite.addTest(TestStatus("test_Status_getNodeParams"))
+#     ## suite.addTest(TestStatus("test_Status_getNodeParamValue"))
+#     ## suite.addTest(TestStatus("test_setNodeParamValue"))
+#     ## suite.addTest(TestStatus("test_read"))
+#     ## suite.addTest(TestStatus("test_write"))
+#     ## suite.addTest(TestStatus("test_getHostIP"))
+#     #suite.addTest(TestStatus("test_getHostNodePort"))
+
+
+
+
+#     # suite.addTest(TestStatus("test_setHostConfigParamValue"))
+#     # suite.addTest(TestStatus("test_setHostNodeParamValue"))
+#     # suite.addTest(TestStatus("test_setConfigDefault"))
+#     # suite.addTest(TestStatus("test_setNodeDefault"))
+
+
+
+#     ## suite.addTest(TestStatusHandler("test_ReadStatus"))
+#     ## suite.addTest(TestStatusHandler("test_WriteStatus"))
+
+
+
+#     ## # suite.addTest(TestATICHosts("test_disconnectHost"))
+#     ## # suite.addTest(TestATICHosts("test_runCommand"))
+#     # suite.addTest(TestATICHosts("test_ping"))
+#     #suite.addTest(TestATICHosts("test_nc"))
+#     #suite.addTest(TestATICHosts("test_isACCNodeAlive"))
+#     # suite.addTest(TestATICHosts("test_getOS"))
+
+>>>>>>> 0180510bc824b1a8cda122d0bc05d31e8c937622
+
+    runner = unittest.TextTestRunner()
+    runner.run(suite)
