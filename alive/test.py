@@ -367,11 +367,10 @@ class TestATICHosts(unittest.TestCase):
 
 
     def test_connect(self):
-        # copy2('hosts.json.test', 'hosts.json')
-        self.assertTrue(self.atic._connect(self.testHost2, self.node2, stayConn=True, updateStatus=True))
-        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
         self.assertTrue(self.atic._connect(self.testHost2, self.node2))
         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.NOTCONNECTED)
+        self.assertTrue(self.atic._connect(self.testHost2, self.node2, stayConn=True, updateStatus=True))
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
         self.assertFalse(self.atic._connect(self.testHost3, self.node1))
         self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "u_connected"), self.atic.NOTCONNECTED)
 
