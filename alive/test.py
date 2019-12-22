@@ -386,20 +386,20 @@ class TestATICHosts(unittest.TestCase):
         self.atic._disconnect(self.testHost2, self.node2)
         self.assertFalse(self.atic.isConnected(self.testHost2, self.node2))
 
-    def test_connectHost(self):
-        self.assertEqual(self.atic.connectHost(self.testHost3, self.node1), self.atic.NOTCONNECTED)
-        self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "u_connected"), self.atic.NOTCONNECTED)
-        self.assertEqual(self.atic.connectHost(self.testHost2, self.node2, updateStatus=True), self.atic.CONNECTED)
-        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
+#    def test_connectHost(self):
+#        self.assertEqual(self.atic.connectHost(self.testHost3, self.node1), self.atic.NOTCONNECTED)
+#        self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "u_connected"), self.atic.NOTCONNECTED)
+#        self.assertEqual(self.atic.connectHost(self.testHost2, self.node2, updateStatus=True), self.atic.CONNECTED)
+#        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
 #        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
 #        sleep(5)
 #        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2, force=True))
 #        self.assertTrue(self.atic.isConnected(self.testHost2, self.node2))
 #        self.atic._disconnect(self.testHost2, self.node2)
 
-#     def test_disconnectHost(self):
-#         self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
-#         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
+    def test_disconnectHost(self):
+        self.assertEqual(self.atic._connect(self.testHost2, self.node2, updateStatus=True), self.atic.CONNECTED)
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
 #         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
 #         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.NOTCONNECTED)
 #         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
