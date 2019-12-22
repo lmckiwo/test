@@ -387,8 +387,8 @@ class TestATICHosts(unittest.TestCase):
         self.assertFalse(self.atic.isConnected(self.testHost2, self.node2))
 
     def test_connectHost(self):
-        self.assertFalse(self.atic.connectHost(self.testHost3, self.node1))
-        self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "connected"), self.atic.NOTCONNECTED)
+        self.assertEqual(self.atic.connectHost(self.testHost3, self.node1), self.atic.NOTCONNECTED)
+        self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "u_connected"), self.atic.NOTCONNECTED)
 #        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
 #        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
 #        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
