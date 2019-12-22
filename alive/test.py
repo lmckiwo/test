@@ -412,15 +412,15 @@ class TestATICHosts(unittest.TestCase):
         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
         self.assertFalse(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
 
-#     def test_ping(self):
-# #         self.assertTrue(self.atic.connectHost(car="QA-001", node="HOST2"))
-#         self.assertTrue(self.atic.ping("google.com"))
-# #         self.assertTrue(self.atic.ping(ip="127.0.0.1"))
-# #         self.assertFalse(self.atic.ping(ip="129.0.1.1"))
-# #         self.assertTrue(self.atic.ping(ip="192.168.2.23"))
-# #         self.assertTrue(self.atic.ping(car="QA-001", ip="192.168.2.23", gwNode="HOST2"))
-# #         self.assertTrue(self.atic.ping(car="QA-001", ip="127.0.0.1", gwNode="HOST2"))
-# #         self.assertFalse(self.atic.ping(car="QA-001", ip="131.4.0.1", gwNode="HOST2"))
+    def test_ping(self):
+#         self.assertTrue(self.atic.connectHost(car="QA-001", node="HOST2"))
+        self.assertTrue(self.atic.ping("google.com"))
+#         self.assertTrue(self.atic.ping(ip="127.0.0.1"))
+#         self.assertFalse(self.atic.ping(ip="129.0.1.1"))
+#         self.assertTrue(self.atic.ping(ip="192.168.2.23"))
+#         self.assertTrue(self.atic.ping(car="QA-001", ip="192.168.2.23", gwNode="HOST2"))
+#         self.assertTrue(self.atic.ping(car="QA-001", ip="127.0.0.1", gwNode="HOST2"))
+#         self.assertFalse(self.atic.ping(car="QA-001", ip="131.4.0.1", gwNode="HOST2"))
 
 #     def test_runCommand(self):
 #         self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
