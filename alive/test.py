@@ -424,7 +424,7 @@ class TestATICHosts(unittest.TestCase):
 
     def test_runCommand(self):
         self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
-        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "connected"), self.atic.CONNECTED)
+        self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
         self.assertTrue(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
 #         self.assertFalse(self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['eth0', 'wlan0', 'lo', 'eth19']))
 #         retVal, output, err = self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['enp2s0', 'wlp3s0', 'lo', 'eth19'])
