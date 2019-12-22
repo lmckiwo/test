@@ -423,7 +423,7 @@ class TestATICHosts(unittest.TestCase):
 #         self.assertFalse(self.atic.ping(car="QA-001", ip="131.4.0.1", gwNode="HOST2"))
 
     def test_runCommand(self):
-        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2))
+        self.assertTrue(self.atic.connectHost(self.testHost2, self.node2, updateStatus=True, stayConn=True))
         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
         self.assertTrue(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
 #         self.assertFalse(self.atic.runCommand(self.testHost2, self.node2, "ip a", TrueIf=['eth0', 'wlan0', 'lo', 'eth19']))
