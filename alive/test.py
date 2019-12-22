@@ -451,17 +451,17 @@ class TestATICHosts(unittest.TestCase):
 
 #         self.assertEqual(self.atic._getOS(host='QA-001', node='HOST2'), "Linux")
 
-#     def test_nc(self):
-#         self.assertFalse(self.atic.nc("10.1.157.106", "8080"))
-#         self.assertTrue(self.atic.nc("192.168.2.23", "22"))
+    def test_nc(self):
+        self.assertFalse(self.atic.nc("10.1.157.106", "8080"))
+        self.assertTrue(self.atic.nc("google.com", "80"))
 #         if self.atic._getOS() == "CYGWIN":
 #             self.assertFalse(self.atic.nc("127.0.0.1", "22"))
 #         else:
 #             self.assertTrue(self.atic.nc("127.0.0.1", "22"))
 
-#     def test_isACCNodeAlive(self):
-#         self.assertFalse(self.atic.isACCNodeAlive(self.testHost1, self.node1))
-#         self.assertTrue(self.atic.isACCNodeAlive(self.testHost2, self.node2))
+    def test_isACCNodeAlive(self):
+        self.assertFalse(self.atic.isACCNodeAlive(self.testHost1, self.node1))
+        self.assertTrue(self.atic.isACCNodeAlive(self.testHost2, self.node2))
 
 if __name__ == "__main__":
     unittest.main()
