@@ -372,7 +372,7 @@ class TestATICHosts(unittest.TestCase):
         self.assertTrue(self.atic._connect(self.testHost2, self.node2, stayConn=True, updateStatus=True))
         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
         self.assertEqual(self.atic._connect(self.testHost3, self.node1), "notConnected")
-        self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, "u_connected"), self.atic.NOTCONNECTED)
+        self.assertEqual(self.atic.status.readStatus(self.testHost3, self.node1, ""), self.atic.NOTCONNECTED)
 
 #     def test_isConnected(self):
 #         self.assertTrue(self.atic._connect(self.testHost2, self.node2))
