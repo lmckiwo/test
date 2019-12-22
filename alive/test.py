@@ -409,8 +409,8 @@ class TestATICHosts(unittest.TestCase):
         self.assertEqual(self.atic._connect(self.testHost2, self.node2, stayConn=True, updateStatus=True), self.atic.CONNECTED)
         self.assertEqual(self.atic.status.readStatus(self.testHost2, self.node2, "u_connected"), self.atic.CONNECTED)
         self.assertTrue(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
-#         self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
-#         self.assertFalse(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
+        self.assertTrue(self.atic.disconnectHost(self.testHost2, self.node2))
+        self.assertFalse(self.atic._isRemoteIndexExists(self.testHost2, self.node2))
 
 #     def test_ping(self):
 # #         self.assertTrue(self.atic.connectHost(car="QA-001", node="HOST2"))
