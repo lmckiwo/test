@@ -6,7 +6,7 @@ Automat==0.8.0
 cffi==1.13.2
 clint==0.5.1
 constantly==15.1.0
-cryptography==2.8
+cryptography==3.2
 enum34==1.1.6
 hy==0.11.1
 incremental==17.5.0
