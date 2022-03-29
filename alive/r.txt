@@ -12,7 +12,7 @@ hy==0.11.1
 incremental==17.5.0
 ipaddress==1.0.23
 MockSSH==1.4.5
-paramiko==2.1.1
+paramiko==2.10.1
 pyasn1==0.4.8
 pycparser==2.19
 pycrypto==2.6.1
